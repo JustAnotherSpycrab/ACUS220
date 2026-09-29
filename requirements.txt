@@ -1,0 +1,7 @@
+These are the libraries required to run the project
+
+birdnet
+onnxruntime
+pandas
+torch
+torchvision
