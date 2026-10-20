@@ -1,0 +1,19 @@
+{
+  "project_name": "ACUS220_Bioacoustic_Pipeline",
+  "audit_settings": {
+    "min_snr_db": 5.0,
+    "check_clipping": true,
+    "target_sample_rate": 48000
+  },
+  "species_filter": {
+    "mode": "auto", 
+    "confidence_threshold": 0.30,
+    "default_lat": null,
+    "default_lon": null,
+    "default_week": -1
+  },
+  "hardware_limits": {
+    "cpu_threads": 4,
+    "batch_size": 32
+  }
+}
