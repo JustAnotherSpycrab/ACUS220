@@ -5,3 +5,14 @@ onnxruntime
 pandas
 torch
 torchvision
+
+# Clasificación de aves con BirdNET (modelo acústico v3.0, backend ONNX)
+birdnet==1.1.1
+
+# Inferencia en GPU (CUDA 13). Instala también las DLL de CUDA y cuDNN vía pip.
+# No instalar junto con el paquete "onnxruntime" (CPU): entran en conflicto.
+onnxruntime-gpu[cuda,cudnn]
+
+# Consolidado de resultados
+pandas
+pyarrow
