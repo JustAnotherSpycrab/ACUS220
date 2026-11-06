@@ -1,7 +1,34 @@
-These are the libraries required to run the project
+# ACUS220 - Indexing System with BirdNET v3
+# Virtual Environment Dependencies (Python 3.10+)
 
-birdnet
-onnxruntime
-pandas
-torch
-torchvision
+
+# Acoustic Inference and Recognition Framework
+
+birdnetlib>=0.17.0
+
+# Note: If using the native ONNX birdnet library:
+
+# birdnet>=0.3.0
+
+# GPU Inference Engine (CUDA Acceleration)
+
+# IMPORTANT: Do not install basic 'onnxruntime' simultaneously to avoid conflicts.
+
+onnxruntime-gpu>=1.18.0,<=1.21.0
+
+# Data Management, Structuring, and Parquet Export
+
+pandas>=2.0.0
+numpy>=1.24.0
+pyarrow>=14.0.0
+
+# NVIDIA Packages for CUDA/cuDNN DLL resolution on Windows (Pip Packages)
+
+nvidia-cublas-cu12
+nvidia-cudnn-cu12
+nvidia-cuda-runtime-cu12
+
+# Utilities and Audio Processing (Optional / Additional Support)
+
+soundfile>=0.12.1
+pydub>=0.25.1
